@@ -1,0 +1,249 @@
+{
+  "configuration" : { },
+  "description" : "Backend For Frontend",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedDate" : "2026-06-19T22:26:52Z",
+  "model" : {
+    "softwareSystems" : [ {
+      "containers" : [ {
+        "documentation" : { },
+        "id" : "2",
+        "name" : "User Interface",
+        "properties" : {
+          "structurizr.dsl.identifier" : "daylog.ui"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "4",
+          "id" : "10",
+          "sourceId" : "2",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,WebBrowser",
+        "technology" : "react"
+      }, {
+        "documentation" : { },
+        "id" : "3",
+        "name" : "Application",
+        "properties" : {
+          "structurizr.dsl.identifier" : "daylog.app"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "5",
+          "id" : "11",
+          "sourceId" : "3",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,MobileDevice",
+        "technology" : "Kotlin"
+      }, {
+        "documentation" : { },
+        "id" : "4",
+        "name" : "BFF - Web UI",
+        "properties" : {
+          "structurizr.dsl.identifier" : "daylog.bffui"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "6",
+          "id" : "12",
+          "sourceId" : "4",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Uses",
+          "destinationId" : "7",
+          "id" : "13",
+          "sourceId" : "4",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Uses",
+          "destinationId" : "8",
+          "id" : "14",
+          "sourceId" : "4",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Uses",
+          "destinationId" : "9",
+          "id" : "15",
+          "sourceId" : "4",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Golang"
+      }, {
+        "documentation" : { },
+        "id" : "5",
+        "name" : "BFF - Mobile App",
+        "properties" : {
+          "structurizr.dsl.identifier" : "daylog.bffapp"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "8",
+          "id" : "16",
+          "sourceId" : "5",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Uses",
+          "destinationId" : "9",
+          "id" : "17",
+          "sourceId" : "5",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Golang"
+      }, {
+        "documentation" : { },
+        "id" : "6",
+        "name" : "Staff Service",
+        "properties" : {
+          "structurizr.dsl.identifier" : "daylog.staff_service"
+        },
+        "tags" : "Element,Container",
+        "technology" : "Golang"
+      }, {
+        "documentation" : { },
+        "id" : "7",
+        "name" : "Child Service",
+        "properties" : {
+          "structurizr.dsl.identifier" : "daylog.child_service"
+        },
+        "tags" : "Element,Container",
+        "technology" : "Golang"
+      }, {
+        "documentation" : { },
+        "id" : "8",
+        "name" : "Activity Service",
+        "properties" : {
+          "structurizr.dsl.identifier" : "daylog.activity_service"
+        },
+        "tags" : "Element,Container",
+        "technology" : "Golang"
+      }, {
+        "documentation" : { },
+        "id" : "9",
+        "name" : "Classroom Service",
+        "properties" : {
+          "structurizr.dsl.identifier" : "daylog.classroom_service"
+        },
+        "tags" : "Element,Container",
+        "technology" : "Golang"
+      } ],
+      "description" : "Service/Application that work together to provide functionality to end users.",
+      "documentation" : { },
+      "id" : "1",
+      "name" : "Daylog",
+      "properties" : {
+        "structurizr.dsl.identifier" : "daylog"
+      },
+      "tags" : "Element,Software System"
+    } ]
+  },
+  "name" : "Reference Architecture",
+  "properties" : {
+    "structurizr.inspection.error" : "21",
+    "structurizr.dsl" : "d29ya3NwYWNlICJSZWZlcmVuY2UgQXJjaGl0ZWN0dXJlIiAiQmFja2VuZCBGb3IgRnJvbnRlbmQiIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCgogICAgbW9kZWwgewogICAgICAgIGRheWxvZyA9IHNvZnR3YXJlU3lzdGVtICJEYXlsb2ciIHsKICAgICAgICAgICAgZGVzY3JpcHRpb24gIlNlcnZpY2UvQXBwbGljYXRpb24gdGhhdCB3b3JrIHRvZ2V0aGVyIHRvIHByb3ZpZGUgZnVuY3Rpb25hbGl0eSB0byBlbmQgdXNlcnMuIgogICAgICAgICAgICB1aSA9IGNvbnRhaW5lciAiVXNlciBJbnRlcmZhY2UiIHsKICAgICAgICAgICAgICAgIHRhZyAiV2ViQnJvd3NlciIKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgInJlYWN0IgogICAgICAgICAgICB9CiAgICAgICAgICAgIGFwcCA9IGNvbnRhaW5lciAiQXBwbGljYXRpb24iIHsKICAgICAgICAgICAgICAgIHRhZyAiTW9iaWxlRGV2aWNlIgogICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiS290bGluIgogICAgICAgICAgICB9CiAgICAgICAgICAgIGJmZnVpID0gY29udGFpbmVyICJCRkYgLSBXZWIgVUkiIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkdvbGFuZyIKICAgICAgICAgICAgfQogICAgICAgICAgICBiZmZhcHAgPSBjb250YWluZXIgIkJGRiAtIE1vYmlsZSBBcHAiIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkdvbGFuZyIKICAgICAgICAgICAgfQogICAgICAgICAgICBzdGFmZl9zZXJ2aWNlID0gY29udGFpbmVyICJTdGFmZiBTZXJ2aWNlIiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJHb2xhbmciCiAgICAgICAgICAgIH0KICAgICAgICAgICAgY2hpbGRfc2VydmljZSA9IGNvbnRhaW5lciAiQ2hpbGQgU2VydmljZSIgewogICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiR29sYW5nIgogICAgICAgICAgICB9CiAgICAgICAgICAgIGFjdGl2aXR5X3NlcnZpY2UgPSBjb250YWluZXIgIkFjdGl2aXR5IFNlcnZpY2UiIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkdvbGFuZyIKICAgICAgICAgICAgfQogICAgICAgICAgICBjbGFzc3Jvb21fc2VydmljZSA9IGNvbnRhaW5lciAiQ2xhc3Nyb29tIFNlcnZpY2UiIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkdvbGFuZyIKICAgICAgICAgICAgfQoKICAgICAgICB9CgogICAgICAgICMgUmVsYXRpb25zaGlwcyAKICAgICAgICBkYXlsb2cudWkgLT4gZGF5bG9nLmJmZnVpICJVc2VzIgogICAgICAgIGRheWxvZy5hcHAgLT4gZGF5bG9nLmJmZmFwcCAiVXNlcyIKICAgICAgICBkYXlsb2cuYmZmdWkgLT4gZGF5bG9nLnN0YWZmX3NlcnZpY2UgIlVzZXMiCiAgICAgICAgZGF5bG9nLmJmZnVpIC0+IGRheWxvZy5jaGlsZF9zZXJ2aWNlICJVc2VzIgogICAgICAgIGRheWxvZy5iZmZ1aSAtPiBkYXlsb2cuYWN0aXZpdHlfc2VydmljZSAiVXNlcyIKICAgICAgICBkYXlsb2cuYmZmdWkgLT4gZGF5bG9nLmNsYXNzcm9vbV9zZXJ2aWNlICJVc2VzIgogICAgICAgIGRheWxvZy5iZmZhcHAgLT4gZGF5bG9nLmFjdGl2aXR5X3NlcnZpY2UgIlVzZXMiCiAgICAgICAgZGF5bG9nLmJmZmFwcCAtPiBkYXlsb2cuY2xhc3Nyb29tX3NlcnZpY2UgIlVzZXMiCiAgICB9ICAgCgogICAgdmlld3MgewogICAgICAgIGNvbnRhaW5lciBkYXlsb2cgIkRheWxvZ19Db250YWluZXJzIiB7CiAgICAgICAgICAgIGluY2x1ZGUgZGF5bG9nLnVpCiAgICAgICAgICAgIGluY2x1ZGUgZGF5bG9nLmFwcAogICAgICAgICAgICBpbmNsdWRlIGRheWxvZy5iZmZ1aQogICAgICAgICAgICBpbmNsdWRlIGRheWxvZy5iZmZhcHAKICAgICAgICAgICAgaW5jbHVkZSBkYXlsb2cuc3RhZmZfc2VydmljZQogICAgICAgICAgICBpbmNsdWRlIGRheWxvZy5jaGlsZF9zZXJ2aWNlCiAgICAgICAgICAgIGluY2x1ZGUgZGF5bG9nLmFjdGl2aXR5X3NlcnZpY2UKICAgICAgICAgICAgaW5jbHVkZSBkYXlsb2cuY2xhc3Nyb29tX3NlcnZpY2UKICAgICAgICAgICAgYXV0b2xheW91dCB0YgogICAgICAgIH0KCiAgICAgICAgc3R5bGVzIHsKICAgICAgICAgICAgZWxlbWVudCAiRWxlbWVudCIgewogICAgICAgICAgICAgICAgY29sb3IgIzA3NzNhZgogICAgICAgICAgICAgICAgc3Ryb2tlICMwNzczYWYKICAgICAgICAgICAgICAgIHN0cm9rZVdpZHRoIDcKICAgICAgICAgICAgICAgIHNoYXBlIHJvdW5kZWRib3gKICAgICAgICAgICAgfSAgICAgICAKICAgICAgICAgICAgZWxlbWVudCAiV2ViQnJvd3NlciIgewogICAgICAgICAgICAgICAgc2hhcGUgV2ViQnJvd3NlcgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIk1vYmlsZURldmljZSIgewogICAgICAgICAgICAgICAgc2hhcGUgTW9iaWxlRGV2aWNlUG9ydHJhaXQKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJQZXJzb24iIHsKICAgICAgICAgICAgICAgIHNoYXBlIHBlcnNvbgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkJvdW5kYXJ5IiB7CiAgICAgICAgICAgICAgICBzdHJva2VXaWR0aCA1CiAgICAgICAgICAgIH0KICAgICAgICAgICAgcmVsYXRpb25zaGlwICJSZWxhdGlvbnNoaXAiIHsKICAgICAgICAgICAgICAgIHRoaWNrbmVzcyA0CiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiRGF0YWJhc2UiIHsKICAgICAgICAgICAgICAgIHNoYXBlIGN5bGluZGVyCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CiAgICAKfQoKLy8gIGRvY2tlciBydW4gLWl0IC0tcm0gLXAgODA4MDo4MDgwIC12ICRwd2RgOi91c3IvbG9jYWwvc3RydWN0dXJpenIgc3RydWN0dXJpenIvc3RydWN0dXJpenIgbG9jYWwgCgovLyBkb2NrZXIgcnVuIC0tcm0gLXYgJHB3ZGA6L3Vzci9sb2NhbC9zdHJ1Y3R1cml6ciBzdHJ1Y3R1cml6ci9zdHJ1Y3R1cml6ciBleHBvcnQgLWZvcm1hdCBwbmcgLXdvcmtzcGFjZSB3b3Jrc3BhY2UuanNvbiAtb3V0cHV0IGltYWdlcwo=",
+    "structurizr.inspection.info" : "0",
+    "structurizr.inspection.ignore" : "0",
+    "structurizr.inspection.warning" : "0"
+  },
+  "views" : {
+    "configuration" : {
+      "styles" : {
+        "elements" : [ {
+          "strokeWidth" : 5,
+          "tag" : "Boundary"
+        }, {
+          "shape" : "Cylinder",
+          "tag" : "Database"
+        }, {
+          "color" : "#0773af",
+          "shape" : "RoundedBox",
+          "stroke" : "#0773af",
+          "strokeWidth" : 7,
+          "tag" : "Element"
+        }, {
+          "shape" : "MobileDevicePortrait",
+          "tag" : "MobileDevice"
+        }, {
+          "shape" : "Person",
+          "tag" : "Person"
+        }, {
+          "shape" : "WebBrowser",
+          "tag" : "WebBrowser"
+        } ],
+        "relationships" : [ {
+          "tag" : "Relationship",
+          "thickness" : 4
+        } ]
+      },
+      "terminology" : { }
+    },
+    "containerViews" : [ {
+      "automaticLayout" : {
+        "edgeSeparation" : 50,
+        "nodeSeparation" : 50,
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 100,
+        "vertices" : true
+      },
+      "elements" : [ {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "5",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "6",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "7",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "8",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "9",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "key" : "Daylog_Containers",
+      "name" : "Container View: Daylog",
+      "order" : 1,
+      "relationships" : [ {
+        "id" : "10"
+      }, {
+        "id" : "11"
+      }, {
+        "id" : "12"
+      }, {
+        "id" : "13"
+      }, {
+        "id" : "14"
+      }, {
+        "id" : "15"
+      }, {
+        "id" : "16"
+      }, {
+        "id" : "17"
+      } ],
+      "softwareSystemId" : "1"
+    } ]
+  }
+}
